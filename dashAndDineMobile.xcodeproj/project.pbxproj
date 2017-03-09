@@ -7,21 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		468CBEC11E6F787700B6FC6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468CBEC01E6F787700B6FC6A /* AppDelegate.swift */; };
-		468CBEC31E6F787700B6FC6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468CBEC21E6F787700B6FC6A /* ViewController.swift */; };
-		468CBEC61E6F787700B6FC6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468CBEC41E6F787700B6FC6A /* Main.storyboard */; };
+		46095D1C1E6F7DA600B59A4C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46095D1B1E6F7DA600B59A4C /* MapKit.framework */; };
+		46095D1E1E6F7DAF00B59A4C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46095D1D1E6F7DAF00B59A4C /* CoreLocation.framework */; };
+		4646DB411E6F7AEB00800213 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB401E6F7AEB00800213 /* APIManager.swift */; };
+		4646DB431E6F7B1B00800213 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB421E6F7B1B00800213 /* constants.swift */; };
+		4646DB451E6F7B2300800213 /* CustomerMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB441E6F7B2300800213 /* CustomerMenuTableViewController.swift */; };
+		4646DB4D1E6F7B2C00800213 /* DeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB461E6F7B2C00800213 /* DeliveryViewController.swift */; };
+		4646DB4E1E6F7B2C00800213 /* DriverMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB471E6F7B2C00800213 /* DriverMenuViewController.swift */; };
+		4646DB4F1E6F7B2C00800213 /* DriverOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB481E6F7B2C00800213 /* DriverOrder.swift */; };
+		4646DB501E6F7B2C00800213 /* DriverOrderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB491E6F7B2C00800213 /* DriverOrderViewCell.swift */; };
+		4646DB511E6F7B2C00800213 /* DriverOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB4A1E6F7B2C00800213 /* DriverOrderViewController.swift */; };
+		4646DB521E6F7B2C00800213 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB4B1E6F7B2C00800213 /* FBManager.swift */; };
+		4646DB531E6F7B2C00800213 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB4C1E6F7B2C00800213 /* Helpers.swift */; };
+		4646DB5C1E6F7B3A00800213 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB541E6F7B3A00800213 /* LoginViewController.swift */; };
+		4646DB5D1E6F7B3A00800213 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB551E6F7B3A00800213 /* Meal.swift */; };
+		4646DB5E1E6F7B3A00800213 /* MealDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB561E6F7B3A00800213 /* MealDetailsViewController.swift */; };
+		4646DB5F1E6F7B3A00800213 /* MealListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB571E6F7B3A00800213 /* MealListTableViewController.swift */; };
+		4646DB601E6F7B3A00800213 /* MealViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB581E6F7B3A00800213 /* MealViewCell.swift */; };
+		4646DB611E6F7B3A00800213 /* OrderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB591E6F7B3A00800213 /* OrderViewCell.swift */; };
+		4646DB621E6F7B3A00800213 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB5A1E6F7B3A00800213 /* OrderViewController.swift */; };
+		4646DB631E6F7B3A00800213 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB5B1E6F7B3A00800213 /* PaymentViewController.swift */; };
+		4646DB681E6F7B4700800213 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB641E6F7B4700800213 /* Restaurant.swift */; };
+		4646DB691E6F7B4700800213 /* RestaurantViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB651E6F7B4700800213 /* RestaurantViewCell.swift */; };
+		4646DB6A1E6F7B4700800213 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB661E6F7B4700800213 /* RestaurantViewController.swift */; };
+		4646DB6B1E6F7B4700800213 /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB671E6F7B4700800213 /* StatisticViewController.swift */; };
+		4646DB731E6F7B5800800213 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB6E1E6F7B5800800213 /* SWRevealViewController.m */; };
+		4646DB741E6F7B5800800213 /* TrayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB6F1E6F7B5800800213 /* TrayItem.swift */; };
+		4646DB751E6F7B5800800213 /* TrayViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB701E6F7B5800800213 /* TrayViewCell.swift */; };
+		4646DB761E6F7B5800800213 /* TrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB711E6F7B5800800213 /* TrayViewController.swift */; };
+		4646DB771E6F7B5800800213 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4646DB721E6F7B5800800213 /* User.swift */; };
+		465321681E71C2240055A0F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465321671E71C2240055A0F9 /* AppDelegate.swift */; };
 		468CBEC81E6F787700B6FC6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 468CBEC71E6F787700B6FC6A /* Assets.xcassets */; };
 		468CBECB1E6F787700B6FC6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468CBEC91E6F787700B6FC6A /* LaunchScreen.storyboard */; };
+		468CBED31E6F78B000B6FC6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468CBED21E6F78B000B6FC6A /* Main.storyboard */; };
+		5BEEAB8002B10577768605FD /* Pods_dashAndDineMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA42C4444CA248B57F8EAA7F /* Pods_dashAndDineMobile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46095D1B1E6F7DA600B59A4C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		46095D1D1E6F7DAF00B59A4C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4646DB401E6F7AEB00800213 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		4646DB421E6F7B1B00800213 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		4646DB441E6F7B2300800213 /* CustomerMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerMenuTableViewController.swift; sourceTree = "<group>"; };
+		4646DB461E6F7B2C00800213 /* DeliveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryViewController.swift; sourceTree = "<group>"; };
+		4646DB471E6F7B2C00800213 /* DriverMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverMenuViewController.swift; sourceTree = "<group>"; };
+		4646DB481E6F7B2C00800213 /* DriverOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverOrder.swift; sourceTree = "<group>"; };
+		4646DB491E6F7B2C00800213 /* DriverOrderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverOrderViewCell.swift; sourceTree = "<group>"; };
+		4646DB4A1E6F7B2C00800213 /* DriverOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverOrderViewController.swift; sourceTree = "<group>"; };
+		4646DB4B1E6F7B2C00800213 /* FBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
+		4646DB4C1E6F7B2C00800213 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		4646DB541E6F7B3A00800213 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4646DB551E6F7B3A00800213 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		4646DB561E6F7B3A00800213 /* MealDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailsViewController.swift; sourceTree = "<group>"; };
+		4646DB571E6F7B3A00800213 /* MealListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealListTableViewController.swift; sourceTree = "<group>"; };
+		4646DB581E6F7B3A00800213 /* MealViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealViewCell.swift; sourceTree = "<group>"; };
+		4646DB591E6F7B3A00800213 /* OrderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewCell.swift; sourceTree = "<group>"; };
+		4646DB5A1E6F7B3A00800213 /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		4646DB5B1E6F7B3A00800213 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		4646DB641E6F7B4700800213 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		4646DB651E6F7B4700800213 /* RestaurantViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewCell.swift; sourceTree = "<group>"; };
+		4646DB661E6F7B4700800213 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		4646DB671E6F7B4700800213 /* StatisticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
+		4646DB6C1E6F7B5700800213 /* dashAndDineMobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dashAndDineMobile-Bridging-Header.h"; sourceTree = "<group>"; };
+		4646DB6D1E6F7B5800800213 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		4646DB6E1E6F7B5800800213 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		4646DB6F1E6F7B5800800213 /* TrayItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrayItem.swift; sourceTree = "<group>"; };
+		4646DB701E6F7B5800800213 /* TrayViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrayViewCell.swift; sourceTree = "<group>"; };
+		4646DB711E6F7B5800800213 /* TrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrayViewController.swift; sourceTree = "<group>"; };
+		4646DB721E6F7B5800800213 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		465321671E71C2240055A0F9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		468CBEBD1E6F787700B6FC6A /* dashAndDineMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dashAndDineMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		468CBEC01E6F787700B6FC6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		468CBEC21E6F787700B6FC6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		468CBEC51E6F787700B6FC6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		468CBEC71E6F787700B6FC6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		468CBECA1E6F787700B6FC6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		468CBECC1E6F787700B6FC6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		468CBED21E6F78B000B6FC6A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46CE17391E6F842400D11681 /* dashAndDineMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dashAndDineMobile.entitlements; sourceTree = "<group>"; };
+		5D0C33A9567505A110FF7A4E /* Pods-dashAndDineMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dashAndDineMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dashAndDineMobile/Pods-dashAndDineMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		A86EA18EBBF42A98AD1F2274 /* Pods-dashAndDineMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dashAndDineMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-dashAndDineMobile/Pods-dashAndDineMobile.release.xcconfig"; sourceTree = "<group>"; };
+		CA42C4444CA248B57F8EAA7F /* Pods_dashAndDineMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dashAndDineMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +92,96 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46095D1E1E6F7DAF00B59A4C /* CoreLocation.framework in Frameworks */,
+				46095D1C1E6F7DA600B59A4C /* MapKit.framework in Frameworks */,
+				5BEEAB8002B10577768605FD /* Pods_dashAndDineMobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46095D1A1E6F7DA600B59A4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46095D1D1E6F7DAF00B59A4C /* CoreLocation.framework */,
+				46095D1B1E6F7DA600B59A4C /* MapKit.framework */,
+				CA42C4444CA248B57F8EAA7F /* Pods_dashAndDineMobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4646DB3B1E6F7ABC00800213 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4646DB4B1E6F7B2C00800213 /* FBManager.swift */,
+				4646DB4C1E6F7B2C00800213 /* Helpers.swift */,
+				4646DB421E6F7B1B00800213 /* constants.swift */,
+				4646DB401E6F7AEB00800213 /* APIManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		4646DB3C1E6F7AC300800213 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				4646DB6C1E6F7B5700800213 /* dashAndDineMobile-Bridging-Header.h */,
+				4646DB6D1E6F7B5800800213 /* SWRevealViewController.h */,
+				4646DB6E1E6F7B5800800213 /* SWRevealViewController.m */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		4646DB3D1E6F7AC700800213 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4646DB701E6F7B5800800213 /* TrayViewCell.swift */,
+				4646DB651E6F7B4700800213 /* RestaurantViewCell.swift */,
+				4646DB581E6F7B3A00800213 /* MealViewCell.swift */,
+				4646DB591E6F7B3A00800213 /* OrderViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4646DB3E1E6F7ACE00800213 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4646DB6F1E6F7B5800800213 /* TrayItem.swift */,
+				4646DB641E6F7B4700800213 /* Restaurant.swift */,
+				4646DB481E6F7B2C00800213 /* DriverOrder.swift */,
+				4646DB721E6F7B5800800213 /* User.swift */,
+				4646DB551E6F7B3A00800213 /* Meal.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4646DB3F1E6F7AD400800213 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4646DB711E6F7B5800800213 /* TrayViewController.swift */,
+				4646DB661E6F7B4700800213 /* RestaurantViewController.swift */,
+				4646DB671E6F7B4700800213 /* StatisticViewController.swift */,
+				4646DB541E6F7B3A00800213 /* LoginViewController.swift */,
+				4646DB561E6F7B3A00800213 /* MealDetailsViewController.swift */,
+				4646DB571E6F7B3A00800213 /* MealListTableViewController.swift */,
+				4646DB5A1E6F7B3A00800213 /* OrderViewController.swift */,
+				4646DB5B1E6F7B3A00800213 /* PaymentViewController.swift */,
+				4646DB461E6F7B2C00800213 /* DeliveryViewController.swift */,
+				4646DB471E6F7B2C00800213 /* DriverMenuViewController.swift */,
+				4646DB491E6F7B2C00800213 /* DriverOrderViewCell.swift */,
+				4646DB4A1E6F7B2C00800213 /* DriverOrderViewController.swift */,
+				4646DB441E6F7B2300800213 /* CustomerMenuTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		468CBEB41E6F787700B6FC6A = {
 			isa = PBXGroup;
 			children = (
 				468CBEBF1E6F787700B6FC6A /* dashAndDineMobile */,
 				468CBEBE1E6F787700B6FC6A /* Products */,
+				46095D1A1E6F7DA600B59A4C /* Frameworks */,
+				6D62E6A8918556F6F11C343C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +196,28 @@
 		468CBEBF1E6F787700B6FC6A /* dashAndDineMobile */ = {
 			isa = PBXGroup;
 			children = (
-				468CBEC01E6F787700B6FC6A /* AppDelegate.swift */,
-				468CBEC21E6F787700B6FC6A /* ViewController.swift */,
-				468CBEC41E6F787700B6FC6A /* Main.storyboard */,
+				465321671E71C2240055A0F9 /* AppDelegate.swift */,
+				4646DB3F1E6F7AD400800213 /* Controller */,
+				4646DB3E1E6F7ACE00800213 /* Model */,
+				4646DB3D1E6F7AC700800213 /* View */,
+				4646DB3C1E6F7AC300800213 /* Lib */,
+				4646DB3B1E6F7ABC00800213 /* Manager */,
 				468CBEC71E6F787700B6FC6A /* Assets.xcassets */,
+				468CBED21E6F78B000B6FC6A /* Main.storyboard */,
 				468CBEC91E6F787700B6FC6A /* LaunchScreen.storyboard */,
+				46CE17391E6F842400D11681 /* dashAndDineMobile.entitlements */,
 				468CBECC1E6F787700B6FC6A /* Info.plist */,
 			);
 			path = dashAndDineMobile;
+			sourceTree = "<group>";
+		};
+		6D62E6A8918556F6F11C343C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D0C33A9567505A110FF7A4E /* Pods-dashAndDineMobile.debug.xcconfig */,
+				A86EA18EBBF42A98AD1F2274 /* Pods-dashAndDineMobile.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 468CBECF1E6F787700B6FC6A /* Build configuration list for PBXNativeTarget "dashAndDineMobile" */;
 			buildPhases = (
+				F9DE8858B6E7743CBB0D3613 /* [CP] Check Pods Manifest.lock */,
 				468CBEB91E6F787700B6FC6A /* Sources */,
 				468CBEBA1E6F787700B6FC6A /* Frameworks */,
 				468CBEBB1E6F787700B6FC6A /* Resources */,
+				CE3EB929C38E409FF6EBB4DE /* [CP] Embed Pods Frameworks */,
+				B55674672BC92E8075106152 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +255,14 @@
 				TargetAttributes = {
 					468CBEBC1E6F787700B6FC6A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9M88AD6E8T;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -123,35 +289,101 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468CBED31E6F78B000B6FC6A /* Main.storyboard in Resources */,
 				468CBECB1E6F787700B6FC6A /* LaunchScreen.storyboard in Resources */,
 				468CBEC81E6F787700B6FC6A /* Assets.xcassets in Resources */,
-				468CBEC61E6F787700B6FC6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B55674672BC92E8075106152 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dashAndDineMobile/Pods-dashAndDineMobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE3EB929C38E409FF6EBB4DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dashAndDineMobile/Pods-dashAndDineMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9DE8858B6E7743CBB0D3613 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		468CBEB91E6F787700B6FC6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				468CBEC31E6F787700B6FC6A /* ViewController.swift in Sources */,
-				468CBEC11E6F787700B6FC6A /* AppDelegate.swift in Sources */,
+				4646DB681E6F7B4700800213 /* Restaurant.swift in Sources */,
+				4646DB5C1E6F7B3A00800213 /* LoginViewController.swift in Sources */,
+				4646DB4F1E6F7B2C00800213 /* DriverOrder.swift in Sources */,
+				4646DB691E6F7B4700800213 /* RestaurantViewCell.swift in Sources */,
+				465321681E71C2240055A0F9 /* AppDelegate.swift in Sources */,
+				4646DB631E6F7B3A00800213 /* PaymentViewController.swift in Sources */,
+				4646DB5D1E6F7B3A00800213 /* Meal.swift in Sources */,
+				4646DB751E6F7B5800800213 /* TrayViewCell.swift in Sources */,
+				4646DB6B1E6F7B4700800213 /* StatisticViewController.swift in Sources */,
+				4646DB411E6F7AEB00800213 /* APIManager.swift in Sources */,
+				4646DB511E6F7B2C00800213 /* DriverOrderViewController.swift in Sources */,
+				4646DB6A1E6F7B4700800213 /* RestaurantViewController.swift in Sources */,
+				4646DB731E6F7B5800800213 /* SWRevealViewController.m in Sources */,
+				4646DB531E6F7B2C00800213 /* Helpers.swift in Sources */,
+				4646DB601E6F7B3A00800213 /* MealViewCell.swift in Sources */,
+				4646DB4D1E6F7B2C00800213 /* DeliveryViewController.swift in Sources */,
+				4646DB5E1E6F7B3A00800213 /* MealDetailsViewController.swift in Sources */,
+				4646DB521E6F7B2C00800213 /* FBManager.swift in Sources */,
+				4646DB4E1E6F7B2C00800213 /* DriverMenuViewController.swift in Sources */,
+				4646DB611E6F7B3A00800213 /* OrderViewCell.swift in Sources */,
+				4646DB771E6F7B5800800213 /* User.swift in Sources */,
+				4646DB451E6F7B2300800213 /* CustomerMenuTableViewController.swift in Sources */,
+				4646DB431E6F7B1B00800213 /* constants.swift in Sources */,
+				4646DB501E6F7B2C00800213 /* DriverOrderViewCell.swift in Sources */,
+				4646DB761E6F7B5800800213 /* TrayViewController.swift in Sources */,
+				4646DB5F1E6F7B3A00800213 /* MealListTableViewController.swift in Sources */,
+				4646DB741E6F7B5800800213 /* TrayItem.swift in Sources */,
+				4646DB621E6F7B3A00800213 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		468CBEC41E6F787700B6FC6A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				468CBEC51E6F787700B6FC6A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		468CBEC91E6F787700B6FC6A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -258,24 +490,35 @@
 		};
 		468CBED01E6F787700B6FC6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D0C33A9567505A110FF7A4E /* Pods-dashAndDineMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = dashAndDineMobile/dashAndDineMobile.entitlements;
+				DEVELOPMENT_TEAM = 9M88AD6E8T;
 				INFOPLIST_FILE = dashAndDineMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slightright.dashAndDineMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "dashAndDineMobile/dashAndDineMobile-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		468CBED11E6F787700B6FC6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A86EA18EBBF42A98AD1F2274 /* Pods-dashAndDineMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = dashAndDineMobile/dashAndDineMobile.entitlements;
+				DEVELOPMENT_TEAM = 9M88AD6E8T;
 				INFOPLIST_FILE = dashAndDineMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slightright.dashAndDineMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "dashAndDineMobile/dashAndDineMobile-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -299,6 +542,7 @@
 				468CBED11E6F787700B6FC6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
